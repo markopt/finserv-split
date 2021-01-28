@@ -22,16 +22,16 @@ class UsersController < ApplicationController
     }
 
     # Enables feature flag and gets live variable values
-    @enabled = optimizely_obj.is_feature_enabled('offer_signup', user_id, attributes)
+    @enabled = split_obj.get_treatment(user_id, 'finserv-promo')
     p @enabled
-    @interest_rate_discount = optimizely_obj.get_feature_variable_double('offer_signup', 'interest_rate_discount', user_id)
-    p @interest_rate_discount
-    @message = optimizely_obj.get_feature_variable_string('offer_signup', 'message', user_id)
-    p @message 
-    @img_url = optimizely_obj.get_feature_variable_string('offer_signup', 'img_url', user_id)
-    p @img_url
-    @call_to_action = optimizely_obj.get_feature_variable_string('offer_signup', 'call_to_action', user_id)
-    p @call_to_action
+    # # @interest_rate_discount = optimizely_obj.get_feature_variable_double('offer_signup', 'interest_rate_discount', user_id)
+    # p @interest_rate_discount
+    # @message = optimizely_obj.get_feature_variable_string('offer_signup', 'message', user_id)
+    # p @message 
+    # @img_url = optimizely_obj.get_feature_variable_string('offer_signup', 'img_url', user_id)
+    # p @img_url
+    # @call_to_action = optimizely_obj.get_feature_variable_string('offer_signup', 'call_to_action', user_id)
+    # p @call_to_action
     @user = User.find(session[:user_id])
   end
 
