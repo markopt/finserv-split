@@ -1,18 +1,14 @@
-# Rails Optimizely Full Stack Demo Site
+# Rails // Split Demo App
 ---
 ![Community Bank Demo Screenshot](https://s3.ap-southeast-2.amazonaws.com/optly-images/community_bank_screenshot.png)
 
-This app was developed to help showcase how [Optimizely Full Stack](https://developers.optimizely.com/x/solutions/sdks/introduction/index.html?language=ruby) could be integrated into a Ruby on Rails application to perform server side experiments and feature management using the [Optimizely Ruby SDK](https://github.com/optimizely/ruby-sdk).
-
 ## Use Cases
 
-Currently the only use case this repo is setup to demonstrate is using a feature flag to either render or not render entirely a promotional banner on the user account page. This server rendered banner also includes variables that can be controlled using the Optimizely interface as part of an experiment or feature rollout.
+Currently the only use case this repo is setup to demonstrate is using a split to either render or not render entirely a promotional banner on the user account page. This server rendered banner also includes configurations that can be controlled using the Split interface as part of an experiment or feature feature flag.
 
-Optimizely Full Stack can enables product development teams to run experiments and rollout new features across any digital touchpoint, and anywhere they're writing code.
+## Implementation
 
-## Optimizely Implementation
-
-See our developer documentation for full information on implementing the [Optimizely Ruby SDK](https://developers.optimizely.com/x/solutions/sdks/reference/index.html?language=ruby).
+See our developer documentation for full information on implementing the [Split Ruby SDK](https://help.split.io/hc/en-us/articles/360020673251-Ruby-SDK).
 
 In this application, we implemented the SDK in ```/app/controllers/application_controller.rb``` so that the functionality could be shared across all controllers.
 
