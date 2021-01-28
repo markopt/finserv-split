@@ -1,0 +1,73 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.account-summary {
+  margin: 0 4em;
+}
+.account-summary h1 {
+  padding: 1em 0 .25em 0;
+}
+.account-header{
+  background-color:#A1A1A2;
+  color: #fff;
+  padding: .5rem .5rem .5rem 2rem;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em; 
+  height: 5em;
+  vertical-align: middle;
+  display: grid;
+}
+.account-type{
+  font-size: 1.75em !important;
+  margin: auto;
+}
+.account-column {
+  font-size: 1.2em !important;
+  margin: auto;
+}
+
+.account-details{
+  margin: 2em;
+}
+
+.account-row{
+  // width: 100%;
+   padding: 2em 0em 2em 4em;
+   margin-left: 0;
+   margin-right: 0;
+  border-bottom: solid 1px #F8F8F8;
+}
+.statements-row {
+  padding: 2em 0em 2em 4em;
+  text-align: center;
+}
+.statements-row .button {
+  width: 100%;
+}
+
+.offer-test {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 3em;
+}
+.offer-text{
+  text-align: center;
+  padding: 2em;
+}
+.offer-img-con > img {
+  margin: auto;
+  padding: 2em;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+.offer-btn {
+  margin: auto;
+}
+
+.offer-btn a {
+  width: 100%;
+  margin: -1em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}

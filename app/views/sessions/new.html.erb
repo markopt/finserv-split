@@ -1,0 +1,12 @@
+<div class="grid-x grid-margin-x">
+  <div class="cell large-6 large-offset-3">
+    <h1>Log in</h1>    
+      <%= form_for(:session, url: login_path) do |f| %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+        <%= f.submit "Log in", class: "button" %>
+      <% end %>
+  </div>
+</div>

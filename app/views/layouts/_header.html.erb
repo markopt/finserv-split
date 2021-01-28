@@ -1,0 +1,46 @@
+<div class="main-header">
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-2 small-1 vertical-align large-offset-1">
+      <%= image_tag "SearchIcon@2x.png", class:"search-icon" %>
+    </div>
+    <div class="cell medium-6 align-center small-11">
+      <a href="/"><h1 id="logo" class="align-center gotham-light">Community<span class="bold">Bank</span></h1></a>
+    </div>
+    <div class="cell medium-2 small-12 vertical-align account-links text-center" style="color: #000; margin: auto;">
+      <% if session[:user_id] %>    
+        <%= link_to @user.first_name, @user %> |
+        <a href="/logout">Sign Out</a>
+      <% else %>
+        <a href="/login">Log in</a> |
+        <a href="/users/new">Register</a>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium"  data-tab-bar="example-menu">
+  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu" style="text-align:center;">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <div class="container" style="width: 100%">
+        <div class="grid-x">
+          <div class="cell large-auto">
+            <li><a href="/banking">Banking</a></li>  
+          </div>
+          <div class="cell large-auto">
+            <li><a href="/cards">Credit Cards</a></li>  
+          </div>
+          <div class="cell large-auto">
+            <li><a href="/mortgages">Mortgages</a></li>
+          </div>
+          <div class="cell large-auto">
+            <li><a href="/auto">Auto Loans</a></li>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

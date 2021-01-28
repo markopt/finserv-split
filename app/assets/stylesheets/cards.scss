@@ -1,0 +1,37 @@
+// Place all the styles related to the Cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.card-cell {
+  padding: 3em;
+}
+
+.credit-card{
+  border-top: 1px solid #ECECEC;
+}
+
+#card-options {
+  padding: 2em 0;
+}
+
+#additional-cards-button{
+  width: 100%;
+  margin-bottom: 4em !important;
+}
+
+#additional-cards-button:hover{
+  background-color: #1356D1;
+  border-color: #fff;
+  color: #fff;
+}
+
+.credit-card button {
+  width: 100%;
+}
+
+.submit-div{
+  margin: 4em 0;
+}
+
+h1.application-form{
+  margin: 1em 0;
+}

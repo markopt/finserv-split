@@ -1,0 +1,406 @@
+/* line 5, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/auto.scss */
+.auto-hero {
+  background-image: url(/assets/AutoHeaderImage-5703640f3a4b36c6d4bc1a43ba229593e2c4365cfd09a28ed8e9c51afd9eeca0.png);
+  height: 25rem;
+  margin: 2em auto !important;
+  color: #fff;
+  background-size: cover;
+}
+/* line 4, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/mortgages.scss */
+.mortgages-hero {
+  background-image: url(/assets/MortgageHeaderImage-9b7af31ca789e507b978018615b1864390f7beb2738d2ace15bea38da3282211.png);
+  height: 25rem;
+  margin: 2em auto !important;
+  color: #fff;
+  background-size: cover;
+}
+
+/* line 11, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/mortgages.scss */
+.hero-cta {
+  height: 100%;
+  width: auto;
+}
+
+/* line 16, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/mortgages.scss */
+.hero-cta > h1 {
+  margin: auto;
+}
+
+/* line 20, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/mortgages.scss */
+.middle-con {
+  margin: auto !important;
+}
+/* line 1, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 4, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-summary {
+  margin: 0 4em;
+}
+
+/* line 7, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-summary h1 {
+  padding: 1em 0 .25em 0;
+}
+
+/* line 10, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-header {
+  background-color: #A1A1A2;
+  color: #fff;
+  padding: .5rem .5rem .5rem 2rem;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  height: 5em;
+  vertical-align: middle;
+  display: grid;
+}
+
+/* line 20, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-type {
+  font-size: 1.75em !important;
+  margin: auto;
+}
+
+/* line 24, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-column {
+  font-size: 1.2em !important;
+  margin: auto;
+}
+
+/* line 29, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-details {
+  margin: 2em;
+}
+
+/* line 33, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.account-row {
+  padding: 2em 0em 2em 4em;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: solid 1px #F8F8F8;
+}
+
+/* line 40, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.statements-row {
+  padding: 2em 0em 2em 4em;
+  text-align: center;
+}
+
+/* line 44, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.statements-row .button {
+  width: 100%;
+}
+
+/* line 48, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.offer-test {
+  background-color: #1C8745;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* line 53, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.offer-text {
+  text-align: center;
+  padding: 2em;
+}
+
+/* line 57, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.offer-img-con > img {
+  margin: auto;
+  padding: 2em;
+}
+
+/* line 61, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.offer-btn {
+  margin: auto;
+}
+
+/* line 65, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/users.scss */
+.offer-btn a {
+  width: 100%;
+  margin: -1em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+/* line 4, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.hero-con {
+  background-image: url(/assets/HomepageCarImage-59284178563e324773a9933bdbd428e0f58db0ef7907f15c16b2ec9d46740471.png);
+  height: 33rem;
+  margin: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 11, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.hero-login-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  color: #000;
+}
+
+/* line 17, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.hero-login-form h3 {
+  color: #000;
+}
+
+/* line 20, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.middle-con > h3 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1em;
+  font-size: 2.5rem;
+  font-family: GothamLight Regular;
+}
+
+/* line 27, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.middle-con h4 {
+  padding-top: 1em;
+}
+
+/* line 30, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.hero-text-con {
+  margin: auto;
+}
+
+/* line 33, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.middle-con {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* line 38, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.home-image {
+  width: 100%;
+}
+
+/* line 41, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.hero-cta {
+  color: #fff;
+  padding: 3em;
+}
+
+/* line 46, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.bottom-con {
+  background-color: #F8F8F8;
+  padding: 3rem;
+}
+
+/* line 51, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.bottom-con h3 {
+  font-size: 2.5rem;
+  padding-bottom: .25em;
+}
+
+/* line 55, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.bottom-con p {
+  padding-bottom: 3em;
+}
+
+/* line 58, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.home-lower-cta {
+  width: 100%;
+  margin: auto;
+}
+
+/* line 63, /Users/abloomquist/demo_engineering/rails-site/finserve/app/assets/stylesheets/welcome.scss */
+.home-lower-cta > a {
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+ @font-face {
+  font-family: "Gotham Bold";
+  src: font-url("Gotham-Bold-Regular.ttf") format("truetype");
+}
+ @font-face {
+  font-family: "GothamLight Regular";
+  src: url('GothamLight-Regular.otf') format("truetype");
+}
+@font-face {
+  font-family: "Gotham Book Regular";
+  src: url('Gotham-Book-Regular.otf') format("truetype");
+}
+
+h1 {
+  font-family: Gotham Bold;
+}
+
+.gotham-light {
+  font-family: GothamLight Regular !important;
+}
+
+body {
+  font-family: GothamLight Regular;
+}
+
+a.button:visited{
+  color: #fff;
+}
+.button{
+  border-radius: 4px;
+  background-color: #1356D1;
+  text-transform: uppercase;
+  font-family: Gotham Book Regular;
+}
+a:hover{
+  background-color: transparent;
+}
+.account-links a {
+  color: #000 !important;
+}
+body{
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+input {
+  border-radius:4px !important;
+}
+.vertical-align {
+  margin: auto;
+}
+.search-icon{
+  width: 1.75em;
+}
+#footer{
+  background-color: #A1A1A2;
+  padding:3em;
+  margin-bottom: -2em !important;
+}
+
+#logo {
+  text-align: center;
+  color: #000;
+}
+
+.footer-links {
+  list-style: none;
+  color: #fff !important;
+}
+
+.footer-links > li > a {
+  color: #fff;
+}
+.footer-btn {
+  width:100%;
+  text-align: center;
+  margin-left: -1em;
+}
+.main-header{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+}
+.main-header a {
+  color: #6B6B6B !important;
+}

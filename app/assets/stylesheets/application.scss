@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: font-url('Gotham-Bold-Regular.ttf') format("truetype");
+}
+ @font-face {
+  font-family: "GothamLight Regular";
+  src: font-url('GothamLight-Regular.otf');
+}
+@font-face {
+  font-family: "Gotham Book Regular";
+  src: font-url('Gotham-Book-Regular.otf');
+}
+
+h1 {
+  font-family: Gotham Bold;
+}
+
+.gotham-book {
+  font-family: Gotham Book Regular !important;
+}
+.gotham-light {
+  font-family: GothamLight Regular !important;
+}
+
+body {
+  font-family: GothamLight Regular;
+}
+
+h4 {
+  font-family: Gotham Book Regular !important;
+}
+p {
+  font-family: GothamLight Regular !important;
+}
+a.button:visited{
+  color: #fff;
+}
+.button{
+  border-radius: 4px;
+  background-color: #1356D1;
+  text-transform: uppercase;
+  font-family: Gotham Book Regular;
+}
+a:hover{
+  background-color: transparent;
+}
+.account-links a {
+  color: #000 !important;
+}
+body{
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+input {
+  border-radius:4px !important;
+}
+.vertical-align {
+  margin: auto;
+}
+.search-icon{
+  width: 1.75em;
+}
+#footer{
+  background-color: #A1A1A2;
+  padding:3em;
+  margin-bottom: -2em !important;
+}
+
+#logo {
+  text-align: center;
+  color: #000;
+}
+
+.footer-links {
+  list-style: none;
+  color: #fff !important;
+}
+
+.footer-links > li > a {
+  color: #fff;
+}
+.footer-btn {
+  width:100%;
+  text-align: center;
+  margin-left: -1em;
+}
+.main-header{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+}
+.main-header a {
+  color: #6B6B6B !important;
+}

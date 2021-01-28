@@ -1,0 +1,22 @@
+// Place all the styles related to the Mortgages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.mortgages-hero {
+  background-image: image-url('MortgageHeaderImage.png');  
+  height: 25rem;
+  margin: 2em auto !important;
+  color: #fff;
+  background-size: cover;
+}
+.hero-cta {
+  height: 100%;
+  width: auto;
+}
+
+.hero-cta > h1{
+  margin: auto;
+}
+
+.middle-con{
+  margin:auto !important;
+}

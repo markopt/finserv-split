@@ -1,0 +1,83 @@
+<div class="grid-x grid-margin-x">
+  <div class="cell large-10 large-offset-1 hero-con">
+    <div class="hero-cta grid-x grid-margin-x">
+      <div class="cell small-12 large-6">
+        <div class="hero-text-con">
+          <h1 class="home-header">
+            Save money on your next car
+          </h1>
+          <a href="/auto" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class='cell small-12 large-6'>
+        <div class="hero-login-form">
+        <% if session[:user_id] %>    
+          <h3>Welcome back <%= @user.first_name %> </h3>
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6">
+              <%= link_to 'View Account', @user, class: 'button radius expanded' %>
+            </div>
+            <div class="cell large-6">
+              <a href="/logout" class="hollow button radius expanded secondary">Logout</a>
+            </div>
+          </div>
+          
+        <% else %>
+          <h3>Secure Account Login</h3>
+          <%= form_for(:session, url: login_path) do |f| %>
+
+            <%= f.label :email %>
+            <%= f.email_field :email, class: 'form-control' %>
+
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'form-control' %>
+
+            <%= f.check_box  :remember_me%>
+            Remember Me <br>
+
+            <%= f.submit "Log in", class: "button radius large-12 cell" %>
+          <% end %>
+          <a href="/users/new" style='color:#000; text-align: center; display: block;'>Register</a>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grid-x grid-margin-x">
+  <div class="cell large-10 middle-con gotham-light">
+    <h3 class="gotham-light">How do you want to save?</h3>  
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-4">
+        <%= image_tag "MovingImage.png", class:"home-image" %>
+        <h4 class="gotham-light">Moving?</h4>
+        <p class="gotham-light">Find a home lending expert that fits your needs.</p>
+        <a href="/mortgages" class="button radius">Learn More</a>
+      </div>
+      <div class="cell large-4">
+        <%= image_tag "DiscoverSavings@1x.png", class:"home-image" %>
+        <h4 class="gotham-light">Discover savings plans</h4>
+        <p class="gotham-light">Explore our savings plans and steps you can take to start saving today.</p>
+        <a href="/banking" class="button radius">Start Now</a>
+      </div>
+      <div class="cell large-4">
+        <%= image_tag "EarnCashImage@1x.png", class:"home-image" %>
+        <h4 class="gotham-light">Earn cash back</h4>
+        <p class="gotham-light">Find the right credit card that will earn you cash back for your spending.</p>
+        <a href="/cards" class="button radius">Explore cards</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom-con grid-x grid-margin-x gotham-light">
+  <div class='cell medium-8 medium-offset-2 small-12'>
+    <h3 class="text-center gotham-light">We've got you covered</h3>
+    <p class="text-center gotham-light">
+      Talk to us about your goals and our savings expers will show you how to get there faster.
+    </p>
+    <div class="home-lower-cta">
+      <a href="/cards" class="button radius">Talk to us</a>
+    </div>
+  </div>
+</div>
+
