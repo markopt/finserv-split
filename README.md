@@ -12,33 +12,28 @@ See our developer documentation for full information on implementing the [Split 
 
 In this application, we implemented the SDK in ```/app/controllers/application_controller.rb``` so that the functionality could be shared across all controllers.
 
-We create a simple method to instantiate the client, this method is also helpful when we need to re-instantiate the client after a change is made in your Optimizely account to ensure you're running with the most up to date experiment configuration.
+We create a simple method to instantiate the client, this method is also helpful when we need to re-instantiate the client after a change is made in your Split account to ensure you're running with the most up to date experiment configuration.
 
 ```ruby
- def instantiate_optimizely
-    uri = URI("https://optimizely.s3.amazonaws.com/json/#{FULLSTACK_PROJECT_ID}.json")
-    datafile = HTTParty.get(uri).body
-    @@optimizely_client = Optimizely::Project.new(datafile, Optimizely::EventDispatcher.new, Optimizely::NoOpLogger.new)
+ def instantiate_split
+    split_factory = SplitIoClient::SplitFactory.new(LOCAL_KEY)
+    split_client = split_factory.client
+    begin  
+      split_client.block_until_ready  
+    rescue SplitIoClient::SDKBlockerTimeoutExpiredException
+      puts 'SDK is not ready. Decide whether to continue or abort execution'  
+    end  
+    split_client
   end
 ```
 
-We added another simple method to check if the client had already been instantiated so as to prevent any unnecessary network calls.
+Once the client has been created, we can then start using it to fetch treatments for a given user
 
 ```ruby
-  def optimizely_obj
-    @@optimizely_client ||= instantiate_optimizely
-  end
-```
+ @enabled = split_obj.get_treatment(user_id, 'finserv-promo')
+ ```
 
-Finally we created a method to accept incoming POST requests from Optimizely's webhook to update the client anytime a change is made from the Optimizely UI
-
-```ruby
-  def update_optimizely
-    instantiate_optimizely
-  end
-```
-
-And with that we're ready to begin using the Optimizely SDK!
+And with that we're ready to begin using the Split SDK!
 
 ## Requirements
 This application requires the following:
